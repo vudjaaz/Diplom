@@ -1,0 +1,15 @@
+@import '../../../variables.modules.scss';
+
+.bheader-content-elem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+  a {
+    text-decoration: none;
+    color: $color-black;
+    font-family: $font-main;
+    font-size: $font-size-15;
+    text-wrap: wrap;
+  }
+}

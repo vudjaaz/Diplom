@@ -1,0 +1,30 @@
+@import '../../variables.modules.scss';
+
+.bheader-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 17px 0;
+  
+  a {
+    &:hover {
+      opacity: 0.8;
+      transition: $transition-buttons;
+    }
+  }
+}
+
+.bheader-button {
+  background-color: $color-buttons;
+  color: $color-white;
+  font-family: $font-semibold;
+  padding: 6px 25px;
+  border-radius: $border-radius-button;
+  transition: $transition-buttons;
+  text-decoration: none;
+  
+  &:hover {
+    opacity: 0.8;
+    transition: $transition-buttons;
+  }
+}

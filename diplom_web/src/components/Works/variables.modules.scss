@@ -1,0 +1,88 @@
+$font-main: "Montserrat-Regular", sans-serif;
+$font-semibold: "Montserrat-SemiBold", sans-serif;
+$font-black: "Montserrat-Black", sans-serif;
+$font-mitr: "Mitr-Light", sans-serif;
+
+$font-size-15: 15px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-36: 36px;
+$font-size-52: 52px;
+$font-size-75: 75px;
+$font-size-90: 90px;
+
+$color-black: #000;
+$color-white: #fff;
+$color-buttons: #001581;
+$color-contrast: #151D46;
+
+$border-radius-button: 4px;
+
+$transition-buttons: opacity 0.3s ease;
+$transition-border-radius: border-radius 0.3s ease;
+
+:export {
+  color-black: $color-black;
+  color-white: $color-white;
+  color-buttons: $color-buttons;
+  color-contrast: $color-contrast;
+  
+  font-main: $font-main;
+  font-semibold: $font-semibold;
+  font-black: $font-black;
+  font-mitr: $font-mitr;
+  
+  font-size-15: $font-size-15;
+  font-size-20: $font-size-20;
+  font-size-24: $font-size-24;
+  font-size-36: $font-size-36;
+  font-size-52: $font-size-52;
+  font-size-75: $font-size-75;
+  font-size-90: $font-size-90;
+  
+  border-radius-button: $border-radius-button;
+
+  transition-buttons: $transition-buttons;
+  transition-border-radius: $transition-border-radius;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.headers-h2 {
+  font-family: $font-main;
+  font-size: $font-size-52;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .wrap {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headers-h2 {
+    text-align: center;
+    font-size: $font-size-36;
+  }
+}
+

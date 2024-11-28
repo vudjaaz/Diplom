@@ -1,0 +1,12 @@
+@import '../../../../variables.modules.scss';
+.catalog-card-desc {
+  display: flex;
+  gap: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-card-desc {
+    justify-content: center;
+    gap: 3%;
+  }
+}

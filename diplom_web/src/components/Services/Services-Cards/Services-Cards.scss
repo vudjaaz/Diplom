@@ -1,0 +1,51 @@
+@import '../../variables.modules.scss';
+
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+
+.services-button {
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: $color-buttons;
+  border-radius: $border-radius-button;
+  transition: $transition-buttons;
+  
+  &:hover {
+    opacity: 0.8;
+    transition: $transition-buttons;
+    cursor: pointer;
+  }
+  
+  a {
+    font-family: $font-semibold;
+    font-size: $font-size-20;
+    color: $color-white;
+    text-decoration: none;
+  } 
+}
+
+@media screen and (max-width: 1000px) {
+  .services-cards {
+    align-items: center;
+    row-gap: 10px;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+  } 
+  
+  .services-button {
+    margin-top: 15px;
+    padding: 5px 10px;
+    
+    a {
+      font-size: $font-size-15;
+    }
+  }
+}

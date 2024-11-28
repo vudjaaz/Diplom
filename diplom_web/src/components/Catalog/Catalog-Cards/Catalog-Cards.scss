@@ -1,0 +1,25 @@
+@import '../../variables.modules.scss';
+.catalog-cards {
+  display: flex;
+  column-gap: 12px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .catalog-cards {
+    justify-content: space-evenly;
+  }
+  #catalog-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-cards {
+    flex-direction: column;
+  }
+}
+

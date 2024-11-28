@@ -1,0 +1,134 @@
+@import '../../../variables.modules.scss';
+
+.services-card-bg {
+  font-family: $font-semibold;
+  font-size: 150px;
+  color: $color-white;
+  text-shadow:
+  -1px -1px 0 #CBCBCB,  
+   1px -1px 0 #CBCBCB,
+   -1px 1px 0 #CBCBCB,
+    1px 1px 0 #CBCBCB;
+}
+
+.services-card {
+  overflow: hidden;
+  position: relative;
+  width: 28%;
+}
+
+.services-card-content {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  
+  position: absolute;
+  top: 28%;
+  left: 0;
+  z-index: 1;
+  
+  p {
+    font-family: $font-main;
+    font-size: $font-size-36;
+  }
+}
+
+.services-card-content-elem {
+  h3 {
+    font-family: $font-main;
+    font-size: $font-size-24;
+  }
+  
+  span {
+    padding-top: 8px;
+    font-family: $font-semibold;
+    font-size: $font-size-15;
+    color: $color-buttons;
+  }
+  
+  p {
+    margin-top: 25px;
+    font-size: $font-size-15;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services-card {
+    width: 28%;
+    height: 30vw;
+  }
+  
+  .services-card-bg {
+    font-size: $font-size-90;
+  }
+  
+  .services-card-content {
+    p {
+      font-size: $font-size-20;
+    }
+  }
+  
+  .services-card-content-elem {
+    h3 {
+      font-size: $font-size-24;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .services-card {
+    width: 40%;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-card{
+   width: 60%; 
+   height: 25vw;
+  }
+  
+  .services-card-content-elem {
+    span {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services-card {
+    width: 80%;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 460px) { 
+  .services-card {
+    width: 85%;
+    height: 55vw;
+  }
+   
+  .services-card-bg {
+    font-size: $font-size-75;
+  }
+  
+  .services-card-content {
+    p {
+      margin-top: 10px;
+      font-size: $font-size-15;
+    }
+  }
+  
+  .services-card-content-elem {
+    h3 {
+      font-size: $font-size-20;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) { 
+  .services-card {
+    width: 90%;
+    height: 55vw;
+  }
+}

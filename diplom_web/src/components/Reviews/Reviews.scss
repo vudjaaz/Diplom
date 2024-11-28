@@ -1,0 +1,19 @@
+@import '../variables.modules.scss';
+
+.reviews {
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.reviews-subtitle {
+  font-family: $font-main;
+  font-size: $font-size-20;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-subtitle {
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../variables.modules.scss';
+
+footer {
+  margin-top: 100px;
+  background-color: $color-contrast;
+}
+
+.footer-content {
+  padding-top: 40px;
+  a {
+    color: $color-white;
+  }
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.confidence {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-main;
+  font-size: $font-size-15;
+  color: $color-white;
+  padding: 60px 0 15px 0;
+}

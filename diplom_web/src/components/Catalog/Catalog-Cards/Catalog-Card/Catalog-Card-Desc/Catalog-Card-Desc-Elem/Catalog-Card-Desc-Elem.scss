@@ -1,0 +1,12 @@
+@import '../../../../../variables.modules.scss';
+
+.catalog-card-desc-elem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+  p {
+    font-family: $font-main;
+    font-size: $font-size-15;
+  }
+}

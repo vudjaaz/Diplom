@@ -1,0 +1,29 @@
+@import '../../variables.modules.scss';
+
+details {
+  font-family: $font-main;
+  font-size: $font-size-20;
+  padding: 10px 10px 0;
+  margin: 35px;
+}
+
+summary {
+  margin: -10px -10px 0;
+  padding: 10px;
+}
+
+details[open] {
+  padding: 10px;
+}
+
+details[open] summary {
+  border-bottom: 1px solid $color-buttons;
+  margin-bottom: 1em;
+}
+
+
+@media screen and (max-width: 450px) {
+  details {
+    font-size: $font-size-15;
+  }
+}
